@@ -1,0 +1,38 @@
+<html>
+  <head>
+  <script src="../static/scripts/jquery-3.2.1.min.js"></script>
+  <script src="../static/scripts/input_box.js"></script>
+  <script src="../static/scripts/socket.io.min.js"></script>
+  <script src="../static/scripts/socket_start.js"></script>
+ 
+
+ <link rel="stylesheet" type="text/css" href="../static/styles/login.css">
+  </head>
+  <body>
+  <title>The Space Between IP's</title>
+  <nav class="navbar navbar-inverse bg-faded" style="margin: 0">
+    <span class="navbar-brand">Should You Be Here?</span>
+  </nav>
+  <div class="background-img-fullscreen top-cell">
+        <div class="trim-content-box signup-box">
+          <div class="header" id="register-box">Login</div> 
+          <div> 
+            <form method='POST'>
+              <div class="input-group">
+                <label for="username" class="input-label" id="username-label">Username</label>
+                <input type="text" autocomplete="off" id="username" name="username" class="input-box">
+              </div>
+              <div class="input-group">
+                <label for="password" class="input-label" id="password-label">Password</label>
+                <input type="password" autocomplete="off" id="password" name="pw" class="input-box">
+              </div>
+              
+              <div class="input-group">
+                <button type="submit" id="signup" class="signup-button">Login</button>
+              </div>
+             </form>
+          </div>
+        </div>   
+  </div>
+  </body>
+</html>

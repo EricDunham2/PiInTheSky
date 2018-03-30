@@ -1,0 +1,124 @@
+<html>
+<body>
+<nav class="navbar navbar-inverse bg-faded" style="margin: 0">
+</nav>
+<div>
+  <div class="parallax-top top-cell">
+    <div class="trim-content-box slogan-box">
+      <div id="start-button-text">System Manager</div>
+    </div>
+  </div>
+</div>
+<div class="info">
+  <div class="header">Stream</div>
+  <div class="text">
+    
+  </div>
+  <div class="video-container">
+    <div class="video-sidepanel">
+      <!--<img class="sidepanel-img" src="http://suretyone.org/blog/wp-content/uploads/NY-City-Street-1024x672.jpg">-->
+    </div>
+    <div class="video">
+      <img class="single-img" src="{{ url_for('video_feed') }}">
+      <div class="video-footer">
+        <div class="video-controller">
+          <i onclick="video_player_control(this)" class="fa fa-play" aria-hidden="true"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax">
+</div>
+<div class="info">
+  <div class="header">System Properties</div>
+  <div class="property-container">
+    <div class="system-property">
+      <div class="property-header">Temperature</div>
+      <div class="property-ico"><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>
+      <div class="property-value" id="temp"></div>
+    </div>
+    <div class="system-property">
+      <div class="property-header">Space</div>
+      <div class="property-ico"><i class="fa fa-pie-chart" aria-hidden="true"></i></div>
+      <div class="property-value" id="disk"></div>
+    </div>
+  </div>
+  <div class="property-container">
+    <div class="system-property">
+      <div class="property-header">RAM</div>
+      <div class="property-ico"><i class="fa fa-microchip" aria-hidden="true"></i></div>
+      <div class="property-value" id="memory"></div>
+    </div>
+    <div class="system-property">
+      <div class="property-header">Network</div>
+      <div class="property-ico"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
+      <div class="property-value" id="unet">
+        <i class="fa fa-arrow-up" aria-hidden="true" style="float:right;"></i>
+      </div>
+      <div class="property-value" id="dnet">
+	<i class="fa fa-arrow-down" aria-hidden="true" style="float:right;"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax">
+</div>
+<div class="info">
+  <div class="header">Script Properties</div>
+  <div class="property-container">
+    <div class="system-property">
+      <div class="property-header">Motion Buffer</div>
+      <div class="property-ico"><i class="fa fa-snowflake-o" aria-hidden="true"></i></div>
+      <div class="property-value" id="mbuffer"></div>
+    </div>
+    <div class="system-property">
+      <div class="property-header">Record Buffer</div>
+      <div class="property-ico"><i class="fa fa-pie-chart" aria-hidden="true"></i></div>
+      <div class="property-value" id="rbuffer"></div>
+    </div>
+  </div>
+  <div class="property-container">
+    <div class="system-property">
+      <div class="property-header">Motion</div>
+      <div class="property-ico"><i class="fa fa-microchip" aria-hidden="true"></i></div>
+      <div class="property-value" id="ismotion"></div>
+    </div>
+    <!--<div class="system-property">
+      <div class="property-header">Network</div>
+      <div class="property-ico"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
+      <div class="property-value" id="unet">
+        <i class="fa fa-arrow-up" aria-hidden="true" style="float:right;"></i>
+      </div>
+      <div class="property-value" id="dnet">
+        <i class="fa fa-arrow-down" aria-hidden="true" style="float:right;"></i>
+      </div>
+    </div>-->
+  </div>
+</div>
+<div class="parallax">
+</div>
+<div class="header"><i class="fa fa-terminal" aria-hidden="true"></i>
+</div>
+
+<div class="info">
+  <div class="system-terminal-container">
+    <div class="terminal-output"></div>
+    <span class="terminal-input-container">
+      <label  for="term-in" class="terminal-user">root@System:~$&nbsp;</label>
+      <input id="term-in" class="terminal-input" spellcheck="false" type="text"></input>
+    </span>
+  </div>
+</div>
+</div>
+</body>
+<head>
+     <link rel="stylesheet" type="text/css" href="../static/styles/stream.css">
+     <link rel="stylesheet" href="../static/styles/font-awesome.min.css">
+     <script src="../static/scripts/jquery-3.2.1.min.js"></script>
+     <script src="../static/scripts/player.js"></script>
+     <script src="../static/scripts/terminal.js"></script>
+     <script src="../static/scripts/system_stats.js"></script>
+</head>
+</html>

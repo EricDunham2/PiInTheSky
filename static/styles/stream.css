@@ -1,0 +1,290 @@
+body{
+  width:100vw;
+  background:#212121;
+  margin:0;
+}
+
+nav{
+  background:rgba(21,21,21,0.6); 
+  width:100vw;
+  height:50px;
+  position:fixed;
+  z-index:100;
+}
+
+.navbar {
+    border-radius: 0px !important;
+    background: #212121 !important;
+    margin: 0 !important;
+}
+
+.container{
+  width:inherit !important;
+  padding:0 !important; 
+  height:50px !important;
+}
+
+
+nav{
+  filter: drop-shadow(2px 2px 2px #4FFFB4);
+}
+
+.trim-content-box{
+  background: rgba(21,21,21,0.6);
+  color:#4FFFB4;
+  margin:auto;
+  border: 3px solid;
+  justify-content: center;
+  border-style: solid;
+  border-width: 0px 5px;
+}
+
+.slogan-box{
+  display: flex;
+  align-items:center;
+  width:600px;
+  height:200px;
+}
+
+
+.start-button:hover{
+background:rgba(21,21,21,0.8);
+cursor:pointer;
+}
+
+#start-button-text{
+    font-size:75px;
+    min-width:390px;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image:  url("../images/keep-calm.png");/*url("http://suretyone.org/blog/wp-content/uploads/NY-City-Street-1024x672.jpg")*/
+  
+ -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+    /* Set a specific height */
+    min-height: 750px;  
+    //filter:grayscale(100);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.top-cell
+{
+    width:100vw;
+    min-height: 700px; 
+    margin: 0;
+}
+
+.parallax-top{
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-top:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-image: url("../images/ricky.png");/*url("http://suretyone.org/blog/wp-content/uploads/NY-City-Street-1024x672.jpg")*/
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    //filter:grayscale(100);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    z-index: -1;
+}
+
+.info{
+  padding: 20px 0 70px;
+
+}
+
+.header{
+  font-size:60px;
+  color:#4FFFB4;
+  font-family: helvetica, arial;
+  display:table;
+  margin:0 auto;
+  -webkit-font-smoothing: antialiased;
+   filter: drop-shadow(2px 2px 2px black);
+}
+
+.single-img
+{
+  padding:0 20px;
+}
+
+.text{
+  display:block;
+  width:90%;
+  text-align: center;
+  margin:0 auto;
+  color:#3DC48A;
+  font-size:25px;
+  font-family: helvetica, arial;
+ -webkit-font-smoothing: antialiased;
+ filter: drop-shadow(2px 2px 2px black);
+}
+
+.image-set{
+  display: table;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.nav-button{
+  background:#111111;
+  border:0;
+  padding:10px 20px;
+  height:49px;
+  float:right;
+  color:#4FFFB4;
+  font-family: helvetica, arial;
+  font-weight:bold;
+  font-size:15px
+}
+
+.nav-button:hover{
+  background:#4FFFB4;
+  color:#111111;
+}
+
+.video {
+float:right;
+}
+
+.video-sidepanel {
+  width:200px;
+  height:inherit;
+  display:inline-block;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.video-container {
+    background:rgba(0,0,0,.7);
+    display: flex;
+    width:65%
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    height:700px;
+}
+
+.video-footer {
+  width:inherit;
+  margin: 0 20px;
+  height:20px;
+  line-height:20px;
+}
+
+.sidepanel-img {
+  width:190px;
+  height:160px;
+  marign:0 auto;
+  padding:10px;
+  cursor:pointer;
+}
+
+.video-controller{
+  height:20px;
+  width:20px;
+  color:white;
+  cursor:pointer;
+}
+
+.system-property {
+  width:250px;
+  height:150px;
+  background:#111;
+  display:inline-grid;
+  color:#3DC48A;
+  font-size:20px;
+  font-family: helvetica, arial;
+ -webkit-font-smoothing: antialiased;
+ filter: drop-shadow(2px 2px 2px black);
+margin:10px;
+}
+
+.property-container {
+  width:90%;
+  margin:10px auto;
+  text-align: center;
+}
+
+.property-value {
+  display:block;
+  padding-left:10px;
+  font-size:20px;
+}
+
+.property-header {
+  display:block;
+  width:100%;
+  height:50px;
+  font-size:30px;
+}
+
+.property-ico {
+  font-size:25px;
+}
+
+.system-terminal-container {
+  width:90%;
+  height:500px;
+  background:#111;
+  margin: 0 auto;
+}
+
+.terminal-input{
+  display:table-cell;
+  width:100%;
+  height:20px;
+  border:none;
+  background:#111;
+  outline: none;
+  color:#3DC48A;
+  caret-color: #3DC48A;
+  font-weight:600;
+  font-family: helvetica, arial;
+  font-size:15px;
+}
+
+.terminal-output{
+  height: 480px;
+  width:100%;
+  color:#3DC48A;
+  font-weight:bold;
+  overflow: auto;
+}
+
+.terminal-user {
+  color:#3DC48A;
+  font-weight:bold;
+  display:table-cell; 
+  width:1px;
+}
+
+.terminal-input-container {
+   display:table;
+   width:100%;
+}
+
+.terminal-output-text{
+     width:100%;
+}
